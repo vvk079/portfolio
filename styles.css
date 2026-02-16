@@ -632,6 +632,25 @@ section {
     border-color: var(--color-secondary);
 }
 
+.project-image-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
 .project-header {
     margin-bottom: var(--spacing-md);
 }
